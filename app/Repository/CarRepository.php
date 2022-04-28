@@ -76,7 +76,7 @@ class CarRepository implements CarRepositoryInterface
             $car->update($attributes->all());
             return response()->json([
                 'message'   =>  SELF::MSG_SUCCESS_UPDATE,
-                'car'       => $car->get(),
+                'car'       => $car,
             ], 200);
         } catch (\Throwable $th) {
             Log::error($th->getMessage());
