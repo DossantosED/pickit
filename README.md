@@ -2,60 +2,61 @@
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## API Pickit
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Esto es una pequeña API para la creacion de un servicio mecánico de autos
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Levantar proyecto
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+El proyecto esta creado en Laravel 8, dejo los pasos para levantar el mismo:
+- Programas requeridos:
+    - PHP 7.2 - 8.0^
+    - NODE JS 6.14^
+    - COMPOSER 2.1.5^
+    - Xampp o similar para levantar la base de datos local
+- Base de datos:
+- Crear de manera local una base de datos MySql con los datos: 
+    - nombre de la base de datos: pickit
+    - usuario: root
+    - sin contraseña
+- Comandos para instalar y levantar el proyecto:
+    (Iniciar los servicios de MySql previamente creada la base de datos)
+    desde una terminal, estando en la carpeta raiz del proyecto lanzar los siguients comandos:
+    - npm install
+    - composer install
+    - php artisan migrate
+    - php artisan bd:seed
+    - php artisan serve
 
-## Learning Laravel
+### Documentacion de la API
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Crear Autos
+![image](https://user-images.githubusercontent.com/57354733/165801255-bef31b18-7f39-4b72-ba4d-4a57974dec91.png)
 
-## Laravel Sponsors
+## Obter Lista de Autos
+![image](https://user-images.githubusercontent.com/57354733/165801341-f0bb152b-fb07-43f3-ab32-9cb5a0b4ac97.png)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Obter un Auto
+![image](https://user-images.githubusercontent.com/57354733/165801394-d000482d-c517-444a-b99c-f79c6116f66d.png)
 
-### Premium Partners
+## Eliminar un Auto
+![image](https://user-images.githubusercontent.com/57354733/165801458-0fc36477-4c32-4810-9862-192841cb1359.png)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+## Editar un Auto
+![image](https://user-images.githubusercontent.com/57354733/165801128-65d533cb-c025-4ac2-b28a-4948d7b31948.png)
 
-## Contributing
+## Crear un propietario
+![image](https://user-images.githubusercontent.com/57354733/165801916-02896d31-7344-4b4a-89ce-56da46c1193c.png)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Crear una transaccion
+![image](https://user-images.githubusercontent.com/57354733/165801994-cc839d2d-1e6e-4674-912b-4918c409329a.png)
 
-## Code of Conduct
+## Obtener lista de servicios por auto
+![image](https://user-images.githubusercontent.com/57354733/165802110-90f02273-72bb-4bc5-b76e-ebf06ce03181.png)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
